@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+<!-- jQuery library -->
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+    
+
+<script>
+  $(document).ready(function(){
+      $(".buttonFilter").click(function(){
+          let name = $(this).attr("data-filter")
+          if(name == "all") {
+              $(".filter").show("2000");
+
+          }else {
+              $(".filter").not("."+name).hide("1000");
+              $(".filter").filter("."+name).show("2000");
+
+          }
+
+      })
+      $(".buttonFilter").click(function(){
+          $(this).addClass("active").siblings().removeClass('active')
+
+      })
+      $('.toggle').click(function(){
+                $(this).toggleClass('active')
+                $('.menu_mobile').toggleClass('active')
+                $('body').toggleClass('overflow-hide')
+            })
+  })
+</script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,700i,800&display=swap" rel="stylesheet">
+
+
+
+
+
+    <title>SONIC</title>
+</head>
+<body>
+
+ <header >
+  <div class="menu_mobile">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+  </div>
+   <section class="top d-flex justify-content-center align-items-center">
+     <div class="container menu" >
+       <div class="row justify-content-center pt-5">
+         <div class="col-6 col-lg-3 top_logo">
+            SONIC
+         </div>
+         <div class=" col-6 col-lg-6 text-center">
+           <div class="d-block d-sm-block d-md-none">
+
+            <div class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div> 
+           </div>
+
+           <nav class="d-none d-md-block">
+             <ul class="d-flex justify-content-center">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+              
+             </ul>
+           </nav>
+         </div>
+         <div class="col-lg-3"></div>
+       </div>
+     </div>
+     <div class="container ">
+       <div class="row justify-content-center">
+         <div class="col-10 text-center">
+           <h1>WE ARE SONIC</h1>
+           <P>Lorem ipsum dolor sit amet consectetur 
+             adipisicing elit. Architecto quibusdam possimus 
+             quasi porro! Itaque?</P>
+
+            <button class="top_button">GET IN TOUCH</button>
+
+            <a class="top_arrow" href="#"><i class="fas fa-arrow-down"></i></a>
+
+         </div>
+       </div>
+     </div>
+   </section>
+
+ </header>
+
+ <main>
+   
+  <section  class="about pt-5 justify-content-center align-items-center d-flex">
+
+    <div class="container pt-3 ">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h3>About Us</h3>
+          <h2>who are you guys</h2>
+          <p class="pt-4 mb-5">Soluta quasi cum delectus eum facilis recusandae nesciunt
+             molestias accusantium libero dolores repellat id in dolorem laborum 
+            ad modi qui at quas dolorum voluptatem voluptatum repudiandae.
+              <br /><br />
+            Soluta quasi cum delectus eum facilis recusandae nesciunt
+             molestias accusantium libero dolores repellat id in dolorem
+              laborum ad modi qui at quas dolorum voluptatem voluptatum 
+              repudiandae.
+            </p>
+            <a href="#">READ More ABOUT US</a>
+        </div>
+        <div class="col-12 col-md-6">
+          <img  class="img-fluid about_img1" src="images/sq_img_6.jpg" alt="img">
+          <img  class="img-fluid about_img2 d-none d-md-block" src="images/sq_img_10.jpg" alt="img">
+        </div>
+      </div>
+
+ 
+    </div>
+
+ </section>
+
+
+ <section class="count" >
+   <div class="container pt-3">
+    <div class="row pt-5">
+      <div class="col-6 col-md-3">
+        <div class="d-flex">
+          <i class="fas fa-tablet-alt fa-3x mr-4 mb-2"></i>
+          <h2 class="timer count-title count-number" data-to="1557" data-speed="1500"></h2>
+        </div>
+        <p>Completed Projects</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="d-flex">
+          <i class="fas fa-tablet-alt fa-3x mr-4 mb-2"></i>
+          <h2 class="timer count-title count-number" data-to="1557" data-speed="1500"></h2>
+        </div>
+        <p>Completed Projects</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="d-flex">
+          <i class="fas fa-tablet-alt fa-3x mr-4 mb-2"></i>
+          <h2 class="timer count-title count-number" data-to="1557" data-speed="1500"></h2>
+        </div>
+        <p>Completed Projects</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="d-flex">
+          <i class="fas fa-tablet-alt fa-3x mr-4 mb-2"></i>
+          <h2 class="timer count-title count-number" data-to="1557" data-speed="1500"></h2>
+        </div>
+        <p>Completed Projects</p>
+      </div>
+    </div>
+   </div>
+ </section>
+
+ <section class="services pt-5 pb-5" >
+   <div class="container pt-5">
+     <div class="row text-center">
+       <div class="col-12">
+        <h3>Our Services</h3>
+        <h2>SERVICES</h2>
+       </div>
+     </div>
+
+     <div class="row pb-5">
+       <div class="col-6 col-md-4 services_box d-flex justify-content-center align-items-center flex-column">
+         <div class="services_ico d-flex justify-content-center align-items-center">
+           <i class="fas fa-pencil-alt"></i>
+          </div>
+          <div class="services_title pt-4">Graphic Design</div>
+          <p class=" pt-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Beatae error libero magnam perferendis a 
+             dignissimos ullam.
+          </p>
+       </div>
+       <div class="pt-4 col-6 col-md-4 services_box d-flex justify-content-center align-items-center flex-column">
+        <div class="services_ico d-flex justify-content-center align-items-center">
+          <i class="fas fa-pencil-alt"></i>
+         </div>
+         <div class="services_title pt-4">Marketing Strategy</div>
+         <p class=" pt-4">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae error libero magnam perferendis a 
+            dignissimos ullam.
+         </p>
+      </div>
+      <div class="pt-4 col-6 col-md-4 services_box d-flex justify-content-center align-items-center flex-column">
+        <div class=" services_ico d-flex justify-content-center align-items-center">
+          <i class="fas fa-pencil-alt"></i>
+         </div>
+         <div class="services_title pt-4">Web Design</div>
+         <p class=" pt-4">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae error libero magnam perferendis a 
+            dignissimos ullam.
+         </p>
+      </div>
+      <div class=" pt-4 col-6 col-md-4 services_box d-flex justify-content-center align-items-center flex-column">
+        <div class="services_ico d-flex justify-content-center align-items-center">
+          <i class="fas fa-pencil-alt"></i>
+         </div>
+         <div class="services_title pt-4">SEO</div>
+         <p class=" pt-4">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae error libero magnam perferendis a 
+            dignissimos ullam.
+         </p>
+      </div>
+      <div class="pt-4 col-6 col-md-4 services_box d-flex justify-content-center align-items-center flex-column">
+        <div class="services_ico d-flex justify-content-center align-items-center">
+          <i class="fas fa-pencil-alt"></i>
+         </div>
+         <div class="services_title pt-4">Market Leading</div>
+         <p class=" pt-4">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae error libero magnam perferendis a 
+            dignissimos ullam.
+         </p>
+      </div>
+      <div class="pt-4 col-6 col-md-4 services_box d-flex justify-content-center align-items-center flex-column">
+        <div class="services_ico d-flex justify-content-center align-items-center">
+          <i class="fas fa-pencil-alt"></i>
+         </div>
+         <div class="services_title pt-4">Pixel Perfect</div>
+         <p class=" pt-4">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae error libero magnam perferendis a 
+            dignissimos ullam.
+         </p>
+      </div>
+       
+     </div>
+   </div>
+
+ </section>
+   <section class="portfolio pt-5 pb-5" >
+
+   
+     <div class="container pt-5 pb-5">
+
+      <div class="row text-center">
+        <div class="col-12">
+         <h3>Awesome Works</h3>
+         <h2>PORTFOLIO</h2>
+        </div>
+      </div>
+
+      <div class="navigationFilter">
+        <div data-filter="all" class="buttonFilter active">ALL</div>
+         <div data-filter="one" class="buttonFilter two">People</div>
+         <div data-filter="two" class="buttonFilter two">Landscape</div>
+         <div data-filter="three" class="buttonFilter two">Building</div>
+     </div>
+
+
+     
+       <div class="row iso">
+         <div class="col-12 col-md-4 portfolio_box filter one ">
+           <img src="images/sq_img_1.jpg" alt="img" class="img-fluid">
+         </div>
+         <div  class="col-12 col-md-4 portfolio_box filter one ">
+          <img src="images/sq_img_2.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 portfolio_box filter  one ">
+          <img src="images/sq_img_3.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 portfolio_box filter two">
+          <img src="images/sq_img_4.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 portfolio_box filter two ">
+          <img src="images/sq_img_5.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 portfolio_box filter two ">
+          <img src="images/sq_img_6.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 portfolio_box filter two">
+          <img src="images/sq_img_7.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 portfolio_box filter three ">
+          <img src="images/sq_img_8.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 portfolio_box filter three ">
+          <img src="images/sq_img_9.jpg" alt="img" class="img-fluid">
+        </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="video d-flex justify-content-center align-items-center">
+     <div class="container">
+       <div class="row  d-flex justify-content-center align-items-center">
+         <div class="col-10 col-md-6">
+           <a href="#"><img class="img-fluid video_shadow mb-4" src="images/sq_img_6.jpg" alt="video_img"></a>
+         </div>
+         <div class="col-10 col-md-6">
+          <div class="row">
+            <div class="col-12">
+              <h3>Watch the video</h3>
+              <h2>WE ARE WEB AGENCY</h2>
+              <p class="pt-5">
+                Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor
+              sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem. <br><br>
+              Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, 
+              sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.
+              </p>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="blog">
+     <div class="container">
+
+      <div class="row pt-2">
+        <div class="col-12 text-center pt-5">
+          <h3>Read the latest post</h3>
+          <h2>BLOG POSTS</h2>
+          
+        </div>
+      </div>
+      <div class="row pt-5 justify-content-center">
+      
+        
+          <div class="col-10 col-md-6 blog_box pt-4 pb-3">
+            <img class="img-fluid" src="images/sq_img_1_blog.jpg" alt="">
+            <div class="col-10 blog_title pt-3 pb-3">Undefined: The Third Boolean Values</div>
+            <div class="col-10"> Jacob Smith
+              7 Apr 2019
+              2
+            </div>
+          </div>
+
+          <div class="col-10 col-md-6 blog_box pt-4 pb-3">
+            <img class="img-fluid" src="images/sq_img_1_blog.jpg" alt="">
+            <div class="col-10 blog_title pt-3 pb-3">Undefined: The Third Boolean Values</div>
+            <div class="col-10"> Jacob Smith
+              7 Apr 2019
+              2
+            </div>
+          </div>
+
+          <div class="col-10 col-md-6 blog_box pt-4 pb-3">
+            <img class="img-fluid" src="images/sq_img_1_blog.jpg" alt="">
+            <div class="col-10 blog_title pt-3 pb-3">Undefined: The Third Boolean Values</div>
+            <div class="col-10"> Jacob Smith
+              7 Apr 2019
+              2
+            </div>
+          </div>
+
+          <div class="col-10 col-md-6 blog_box pt-4 pb-3">
+            <img class="img-fluid" src="images/sq_img_1_blog.jpg" alt="">
+            <div class="col-10 blog_title pt-3 pb-3">Undefined: The Third Boolean Values</div>
+            <div class="col-10"> Jacob Smith
+              7 Apr 2019
+              2
+            </div>
+          </div>
+
+          
+        
+      </div>
+     </div>
+     <div class="footer_point d-flex justify-content-center align-items-center"><i class="fas fa-angle-up"></i></div>
+   </section>
+
+ </main>
+
+
+ <footer>
+   <div class="footer">
+   
+     <div class="container content">
+       
+       <div class="row justify-content-center ">
+         <div class="col-5 col-sm-6 col-md-3 ">
+           <h4 class="mb-4">Scenic Products</h4>
+           <p>Web Design</p>
+           <p>Graphic Design</p>
+           <p>Web Developers</p>
+           <p>Resources</p>
+         </div>
+         <div class="col-5 col-sm-6 col-md-3">
+          <h4 class="mb-4">Company </h4>
+          <p>About Us</p>
+          <p>Career</p>
+          <p>Blog</p>
+          <p>Resources</p>
+        </div>
+        <div class="col-5 col-sm-6 col-md-3">
+          <h4 class="mb-4">Support</h4>
+          <p>Support</p>
+          <p>Privacy</p>
+          <p>Terms of Service</p>
+          <p>Info</p>
+        </div>
+        <div class="col-5 col-sm-6 col-md-3">
+          <h4 class="mb-4">Contact Us</h4>
+          <p>Web Design</p>
+          <p>Graphic Design</p>
+          <p>Web Developers</p>
+          <p>Resources</p>
+        </div>
+       </div>
+     </div>
+   </div>
+   <div class="footer_blue">  </div>
+ </footer>
+
+  
+
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        
+
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+          (function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from:0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 10000,           // how long it should take to count between the target numbers
+		refreshInterval: 1,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+        </script>
+
+
+</body>
+</html>
