@@ -75,13 +75,17 @@ h2 {
 .top {
   width: 100%;
   height: 100vh;
-  background: url('images/bg-12.png') no-repeat 50% 50% / cover;
+  background: url('images/bg.png') no-repeat 50% 50% / cover;
+  transform: skew(0deg,-5deg); 
+  position: relative;
+  top:-100px;
   color:white;
   position: relative;
 
-  // .red {
-  //   border: 1px solid red;
-  // }
+  .container {
+    transform: skew(0deg,5deg); 
+    top:100px;
+  }
 
   nav {
     ul {
@@ -134,7 +138,7 @@ h2 {
 
   &_arrow {
     position: absolute;
-    top:440px;
+    top:420px;
     left:50%;
     padding: 17px 20px;
     margin-left:-20px;
@@ -383,18 +387,18 @@ footer {
 }
 
 .toggle {
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   right: 10px;
-  top:0px;
+  top:50px;
   cursor: pointer;
-  z-index: 33;
 }
 
 .toggle span {
   position: relative;
   width: 36px;
   height: 4px;
-  background:black;
+  background:white;
   display: block;
   margin-bottom: 5px;
   transition: .5s;
@@ -427,14 +431,13 @@ footer {
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .menu_mobile {
-  
-  z-index: 2;
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 90%;
   height: 100vh;
   background: rgb(230, 230, 230);
   position: absolute;
+  z-index: 2;
   left:-100%;
   transition: .3s;
 }
